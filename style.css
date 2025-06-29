@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #0f0f1a, #1c102e);
+  color: #f0f0f0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* HEADER & NAVBAR */
+header {
+  background: #1a1a2e;
+  color: #e797ff;
+  padding: 2em 0 1em;
+  box-shadow: 0 2px 10px rgba(255, 110, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  text-shadow: 0 0 10px #b700ff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin-top: 1em;
+  list-style: none;
+}
+
+.nav-btn {
+  position: relative;
+  padding: 0.6em 1.2em;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: color 0.4s ease;
+}
+
+.nav-btn::before,
+.nav-btn::after {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  border-radius: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: -1;
+}
+
+.nav-btn::before {
+  border: 2px solid #ff6a00;
+  opacity: 0.6;
+}
+
+.nav-btn::after {
+  background: linear-gradient(45deg, #c77dff, #ffffff);
+  opacity: 0.15;
+}
+
+.nav-btn:hover {
+  color: #ff6a00;
+}
+
+.nav-btn:hover::before,
+.nav-btn:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+/* SECTION */
+section {
+  padding: 2em;
+  max-width: 1000px;
+  margin: 2em auto;
+  background: rgba(34, 34, 51, 0.6);
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 106, 0, 0.15);
+  backdrop-filter: blur(6px);
+}
+
+/* TENTANG */
+.tentang-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.foto-profil {
+  width: 180px;
+  border-radius: 50%;
+  border: 4px solid #ff6a00;
+  box-shadow: 0 0 12px #ff6a00;
+}
+
+/* PROJEK */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.2em;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(138, 43, 226, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 0 20px rgba(255, 106, 0, 0.4);
+}
+
+.projek-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.7em;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+}
+
+.btn {
+  margin-top: 0.5em;
+  padding: 0.6em 1.2em;
+  background: #c77dff;
+  color: #0f0f1a;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #c77dff;
+}
+
+.btn:hover {
+  background: #ff6a00;
+  color: white;
+  box-shadow: 0 0 15px #ff6a00;
+}
+
+/* KONTAK */
+.kontak-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.kontak-list li {
+  margin: 1em 0;
+}
+
+.kontak-list a {
+  color: #c77dff;
+  text-decoration: none;
+}
+
+.kontak-list a:hover {
+  color: #ff6a00;
+}
+
+/* FOOTER */
+footer {
+  background: #1a1a2e;
+  color: #cccccc;
+  text-align: center;
+  padding: 1.5em;
+  font-size: 0.95em;
+  letter-spacing: 0.5px;
+}
+
+/* FADE ANIMASI */
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIF */
+@media (max-width: 768px) {
+  .foto-profil {
+    width: 140px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+#star-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background: transparent;
+}
+
+.download-btn {
+  margin-top: 1em;
+  background: transparent;
+  border: 2px solid #ff6a00;
+  color: #ff6a00;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 106, 0, 0.2);
+}
+
+.download-btn:hover {
+  background-color: #ff6a00;
+  color: #0f0f1a;
+  box-shadow: 0 0 20px #ff6a00;
+}
