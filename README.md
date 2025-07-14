@@ -13,11 +13,14 @@
     <h1>Nadya Atiqah Adha</h1>
     <nav>
   <ul class="navbar">
-    <li><a href="#tentang" class="nav-btn">Tentang</a></li> 
-    <li><a href="#projek" class="nav-btn">Projek</a></li> 
+    <li><a href="#tentang" class="nav-btn">Tentang</a></li>
+    <li><a href="#publikasi" class="nav-btn">Publikasi</a></li> 
+    <li><a href="#projek" class="nav-btn">Projek</a></li>
+    <li><a href="#Google Sites" class="nav-btn">Google sites</a></li> 
     <li><a href="#kontak" class="nav-btn">Kontak</a></li>
   </ul>
 </nav>
+
 
   </header>
 
@@ -34,11 +37,29 @@
     </div>
   </section>
 
+  <section id="publikasi" class="fade">
+  <h2>Publikasi Jurnal</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Implementasi CRUD (Create, Read, Update, Delete) pada aplikasi toko sembako berbasis Visual Basic.NET dan MySQL</h3>
+      <p>Jurnal Teknologi dan Informasi, 4(1), 279–291</p>
+      <a href="https://ejournal.yasin-alsys.org/aldyas/article/view/4456" target="_blank" class="btn">Lihat Jurnal</a>
+    </div>
+
+    <div class="card">
+      <h3>Implementasi framework Laravel pada website e-commerce “Griya Pakaian” untuk meningkatkan efektivitas pengelolaan bisnis</h3>
+      <p>Journal of Innovative and Creativity, 5(4), 82–91</p>
+      <a href="https://joecy.org/index.php/joecy/article/view/1014/954 " target="_blank" class="btn">Lihat Jurnal</a>
+    </div>
+
+  </div>
+</section>
+
   <section id="projek" class="fade">
     <h2>Projek Saya</h2>
 
     <!-- Loop untuk setiap projek -->
-    <div class="card-container">
+    < class="card-container">
       <div class="card">
         <h3>Griya Pakaian</h3>
         <img src="griyapakaian.png" alt="Website Griya Pakaian" class="projek-img" />
@@ -87,8 +108,52 @@
         <p>Aplikasi prediksi cuaca dengan Forward Chaining menggunakan Visual Basic.</p>
         <a href="https://github.com/nadyaatiqah22/SistemPrediksiCuaca" target="_blank" class="btn">Lihat Projek</a>
       </div>
+
+    <div class="card">
+        <h3>Prototype UI UX Pengembangan Fitur Smartmeal Pada Gojek</h3>
+        <img src="figma.png" alt="Prediksi Cuaca" class="projek-img" />
+        <p>Aplikasi prediksi cuaca dengan Forward Chaining menggunakan Visual Basic.</p>
+        <a href="https://www.figma.com/design/79JzuJMF9Up4fUwnvHVWeY/Untitled?node-id=0-1&p=f" target="_blank" class="btn">Lihat Projek</a>
+      </div>
     </div>
+
   </section>
+
+   <section id="Google Sites" class="fade">
+  <h2>Google Sites</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>PEMASANGAN DAN KONFIGURASI VLAN </h3>
+      <p>Bahan Ajar TKJ</p>
+      <a href="https://sites.google.com/mhs.unesa.ac.id/materi-tkj/beranda" target="_blank" class="btn">Lihat Website</a>
+    </div>
+
+    <div class="card">
+      <h3>Keselamatan dan Kesehatan Kerja Lingkungan Hidup (K3LH) dan Budaya Kerja Industri</h3>
+      <p>Bahan Ajar RPL</p>
+      <a href="https://sites.google.com/mhs.unesa.ac.id/media-pembelajaran-rpl/beranda" target="_blank" class="btn">Lihat Website</a>
+    </div>
+
+    <div class="card">
+      <h3>Administrasi Infrastruktur Jaringan</h3>
+      <p>Bahan Ajar TKJ</p>
+      <a href="https://sites.google.com/mhs.unesa.ac.id/kelas-nadya/home" target="_blank" class="btn">Lihat Website</a>
+    </div>
+
+    <div class="card">
+      <h3>Dasar Pemrograman Web</h3>
+      <p>Bahan Ajar TKJ dan RPL</p>
+      <a href="https://sites.google.com/mhs.unesa.ac.id/pemrogramanweb-nadya/beranda" target="_blank" class="btn">Lihat </a>
+    </div>
+
+    <div class="card">
+      <h3>Jaringan Komputer</h3>
+      <p>Materi Dasar TKJ</p>
+      <a href="https://sites.google.com/mhs.unesa.ac.id/jarkom/halaman-muka" target="_blank" class="btn">Lihat Website</a>
+    </div>
+
+  </div>
+</section>
 
   <section id="kontak" class="fade">
     <h2>Kontak</h2>
