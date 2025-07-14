@@ -84,6 +84,29 @@ header h1 {
   opacity: 1;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 0.5em;
+  }
+
+  .nav-btn {
+    font-size: 0.9em;
+    padding: 0.5em 1em;
+  }
+
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  header {
+    padding: 1.2em 0 0.6em;
+  }
+}
+
+
 /* SECTION */
 section {
   padding: 2em;
