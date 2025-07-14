@@ -13,25 +13,44 @@ body {
   text-align: center;
 }
 
-/* === NAVBAR RESPONSIF === */
 .navbar {
   background-color: #1a1a2e;
-  padding: 1em 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 1.2em 1.5em;
   position: sticky;
   top: 0;
   z-index: 1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 65px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
 }
 
+/* Judul di tengah */
+.brand-center {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #e797ff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+/* Tombol hamburger */
 .hamburger {
-  font-size: 2em;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.2em;
   color: #e797ff;
   cursor: pointer;
   user-select: none;
 }
 
+/* Menu navigasi */
 .nav-menu {
   position: absolute;
   top: 70px;
@@ -44,11 +63,12 @@ body {
   max-height: 0;
   transition: max-height 0.4s ease;
   flex-direction: column;
+  display: flex;
+  min-width: 180px;
 }
 
 .nav-menu.active {
-  display: flex;
-  max-height: 500px; /* Sesuaikan jumlah menu */
+  max-height: 500px;
 }
 
 .nav-menu li {
@@ -61,10 +81,11 @@ body {
 
 .nav-menu a {
   display: block;
-  padding: 1em 2em;
+  padding: 1em 1.5em;
   color: #fff;
   text-decoration: none;
   transition: background 0.3s ease;
+  font-size: 1rem;
 }
 
 .nav-menu a:hover {
@@ -72,7 +93,26 @@ body {
   color: #ffd6ff;
 }
 
+@media (max-width: 500px) {
+  .brand-center {
+    font-size: 1.2em;
+  }
 
+  .hamburger {
+    font-size: 2em;
+  }
+
+  .nav-menu {
+    right: 10px;
+    top: 60px;
+    min-width: 160px;
+  }
+
+  .nav-menu a {
+    padding: 0.8em 1.2em;
+    font-size: 0.95rem;
+  }
+}
 
 /* SECTION */
 section {
