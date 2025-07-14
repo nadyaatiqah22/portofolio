@@ -10,24 +10,21 @@
   <canvas id="star-canvas"></canvas>
 
   <!-- NAVBAR RESPONSIF -->
-  <nav class="navbar">
-    <div class="hamburger" id="hamburger">&#9776;</div>
-    <ul class="nav-menu" id="nav-menu">
-      <li><a href="#tentang" class="nav-btn">Tentang</a></li>
-      <li><a href="#publikasi" class="nav-btn">Publikasi</a></li>
-      <li><a href="#projek" class="nav-btn">Projek</a></li>
-      <li><a href="#Google Sites" class="nav-btn">Google Sites</a></li>
-      <li><a href="#kontak" class="nav-btn">Kontak</a></li>
-    </ul>
-  </nav>
-
-  <header>
-    <h1>Nadya Atiqah Adha</h1>
-  </header>
+ <nav class="navbar">
+  <div class="brand-center">MY PORTOFOLIO</div>
+  <div class="hamburger" id="hamburger">&#9776;</div>
+  <ul class="nav-menu" id="nav-menu">
+    <li><a href="#tentang" class="nav-btn">Tentang</a></li>
+    <li><a href="#publikasi" class="nav-btn">Publikasi</a></li>
+    <li><a href="#projek" class="nav-btn">Projek</a></li>
+    <li><a href="#Google Sites" class="nav-btn">Google Sites</a></li>
+    <li><a href="#kontak" class="nav-btn">Kontak</a></li>
+  </ul>
+</nav>
 
   <!-- SECTION: TENTANG -->
   <section id="tentang" class="fade">
-    <h2>Tentang Saya</h2>
+    <h2>Nadya Atiqah Adha</h2>
     <div class="tentang-container">
       <img src="fotodiri.png" alt="Foto Nadya" class="foto-profil" />
       <div class="deskripsi">
