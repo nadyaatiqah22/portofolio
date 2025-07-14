@@ -14,6 +14,21 @@ fadeSections.forEach(section => {
   observer.observe(section);
 });
 
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+const navLinks = document.querySelectorAll('.nav-menu a');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+
+// Optional: Tutup menu setelah klik link
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+  });
+});
+
 // --- Animasi Bintang ---
 const canvas = document.getElementById("star-canvas");
 const ctx = canvas.getContext("2d");
